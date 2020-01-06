@@ -1,0 +1,133 @@
+<!doctype html>
+
+<!-- HOME PAGE  -->
+
+<html>
+  <head>
+    <title>Sarah Bawabe</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="./favicon.png">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nanum Gothic: 100,400,700' rel='stylesheet'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+
+  <div class="topBox">
+    <div id="nameBox">
+      <a href="index.html"> <img src="name.png" id="name"> </a>
+    </div>
+    <div id="optionsBox">
+      <nav>
+        <a href="art.html" class="navbar">+ art</a>
+        <a href="design.html" class="navbar">+ design</a>
+        <a href="typography.html" class="navbar">+ typography</a>
+        <a href="resume.html" class="navbar">+ resume/cv</a>
+        <a href="aboutMe.html" class="navbar">+ about me</a>
+      </nav>
+    </div>
+  </div>
+
+  <div id="bottomBox">
+
+    <img src="artDesignAstroWHITE.png" id="artDesignAstro">
+
+    <div class="slides">
+      <img src="artPolaroid.png" class="slideImage">
+      <a href="art.html">
+        <div class="slideText">Art <i class="fas fa-long-arrow-alt-right"></i>
+        </div> </a>
+    </div>
+
+    <div class="slides">
+      <img src="designSlideSTRIPES.jpg" class="slideImage">
+      <a href="design.html">
+        <div class="slideText">Design <i class="fas fa-long-arrow-alt-right"></i>
+        </div> </a>
+    </div>
+
+
+    <script>
+      var currInd = 0;
+      slideshow();
+
+      function slideshow() {
+        var i;
+        var slides = document.getElementsByClassName("slides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        currInd++;
+        if (currInd == slides.length) {
+          currInd = 0;
+        }
+        slides[currInd].style.display = "block";
+        setTimeout(slideshow, 3000);
+      }
+    </script>
+
+
+
+    <!-- <div class="mainArt">
+      <div class="artBox">
+
+        <div class="artItem" id="bird">
+          <img src="bird.jpg" class="artImage">
+          <div class="middle">
+            <div class="artText">BIRD</div>
+          </div>
+        </div>
+
+        <div class="artItem" id="cat">
+          <img src="cat.jpg" class="artImage">
+          <div class="middle">
+            <div class="artText">CAT</div>
+          </div>
+        </div>
+
+        <div class="artItem" id="hedgehog">
+          <img src="hedgehog.jpg" class="artImage">
+          <div class="middle">
+            <div class="artText">HEDGEHOG</div>
+          </div>
+        </div>
+
+        <div class="artItem" id="skydiver">
+          <img src="skydiver.jpg" class="artImage">
+          <div class="middle">
+            <div class="artText">SKYDIVER</div>
+          </div>
+        </div>
+
+        <div class="artItem" id="apple">
+          <img src="apple.jpg" class="artImage">
+          <div class="middle">
+            <div class="artText">APPLE</div>
+          </div>
+        </div>
+
+        <div class="artItem" id="bear">
+          <img src="bear.jpg" class="artImage">
+          <div class="middle">
+            <div class="artText">BEAR</div>
+          </div>
+        </div>
+
+      </div>
+    </div> -->
+  </div>
+
+</html>
+
+<!-- <div class="mainUIUX">
+  <h1 id="uiuxTitle"> UI/UX portfolio </h1>
+  <div class="uiuxBox">
+    <div class="uiuxItem" id="redesign"> <a href="redesign.html" class="uiuxChooser"> redesign </a> </div>
+    <div class="uiuxItem" id="everydayUI"> <a href="everyday.html" class="uiuxChooser"> everyday UI </a> </div>
+    <div class="uiuxItem" id="ABtesting"> <a href="ABtesting.html" class="uiuxChooser"> ABtesting </a> </div>
+    <div class="uiuxItem" id="development"> <a href="development.html" class="uiuxChooser"> development </a> </div>
+    <div class="uiuxItem" id="iterative"> <a href="iterative.html" class="uiuxChooser"> iterative design </a> </div>
+  </div>
+</div> -->

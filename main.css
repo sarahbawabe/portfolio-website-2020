@@ -1,0 +1,184 @@
+#wholeBox {
+  height: 100vh;
+}
+
+#bottomBox {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: flex-start;
+  width: 100vw;
+  align-self: center;
+}
+
+h3 {
+  font-size: 50px;
+  font-weight: 500;
+  margin: 0px;
+}
+
+.slide {
+  cursor: pointer;
+  position: relative;
+  background-color: #3E3E3E;
+  text-align: center;
+  margin: 10px;
+  height: 100%;
+}
+
+.slideImage {
+  opacity: 1;
+  width: 100vw;
+  max-height: 88vh;
+  object-fit: cover;
+  overflow: hidden;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.slideText {
+  cursor: pointer;
+  position: absolute;
+  background-color: #C5C5C5;
+  padding: 20px;
+  border-radius: 10px;
+  bottom: 8px;
+  right: 16px;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.slideText:hover {
+  background-color: #E8E8E8;
+}
+
+#artDesignAstro {
+  background-color: #464646;
+  /* background-color: white; */
+  padding: 20px;
+  margin-left: 16px;
+  position: absolute;
+  bottom: 10px;
+  width: 20%;
+  height: 22%;
+  align-self: flex-end;
+  /* border: 1px #3E3E3E solid; */
+  border-radius: 20px;
+  z-index: 1;
+}
+
+
+
+/* @media only screen and (min-width: 480px) and (max-width: 900px){
+  #bottomBox {
+    flex-direction: column;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  #bottomBox {
+    flex-direction: column;
+    margin-top: 20vh;
+  }
+
+  .uiuxBox {
+    display: grid;
+    grid-template-columns: 18vw 18vw 18vw 18vw 18vw;
+    grid-template-rows: 36vw 27vw 36vw;
+    width: 90vw;
+  }
+
+  .uiuxItem,.artItem {
+    margin: 2vw;
+  }
+
+  .mainArt {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .artBox {
+    width: 90vw;
+    margin: 0px;
+    margin-left: 5vw;
+    grid-template-columns: 22.5vw 22.5vw 22.5vw 22.5vw;
+    grid-template-rows: 11.25vw 11.25vw 11.25vw 11.25vw 11.25vw 11.25vw 11.25vw 11.25vw 11.25vw 11.25vw 11.25vw;
+  }
+} */
+
+
+
+/* ------------ */
+
+
+.uiuxBox {
+  display: grid;
+  grid-template-columns: 10vw 10vw 10vw 10vw 10vw;
+  grid-template-rows: 20vw 15vw 20vw;
+  margin: 20px;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 50vw;
+}
+
+.uiuxItem {
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+  text-align: center;
+  margin: 10px;
+  /* opacity: 0.7; */
+}
+
+.uiuxChooser {
+  height: 30px;
+  vertical-align: middle;
+  align-self: center;
+  padding-bottom: 0px;
+  opacity: none;
+  background-color: #DF331F;
+}
+
+#redesign {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  background-image: url("sO_flowChart.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#development {
+  grid-column: 1 / 6;
+  grid-row: 2;
+  background-image: url("devClip.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#ABtesting {
+  grid-column: 4 / 6;
+  grid-row: 1;
+
+  background-image: url("taxi.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#iterative {
+  grid-column: 1 / 4;
+  grid-row: 3;
+  background-image: url("graySquare-01.png");
+  background-size: cover;
+  background-position: center;
+}
+
+#everydayUI {
+  grid-column: 4 / 6;
+  grid-row: 3;
+  background-image: url("swipeAccess-01.png");
+  background-size: cover;
+  background-position: center;
+}

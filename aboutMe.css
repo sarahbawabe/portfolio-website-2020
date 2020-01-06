@@ -1,0 +1,88 @@
+#bottomBox {
+  display: flex;
+  padding: 20px;
+  padding-top: 0px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70vw;
+  align-self: center;
+}
+
+.infoBox {
+  display: flex;
+  justify-content: flex-start;
+  float: left;
+  text-align: left;
+}
+
+#pic {
+  height: 50vw;
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  font-size: 18px;
+  padding: 0px;
+  text-align: left;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #3E3E3E;
+  margin-top: 0px;
+}
+
+#contactInfo {
+  padding: 20px;
+  padding-top: 0px;
+  align-items: flex-start;
+}
+
+.skills {
+  text-align: left;
+  align-self: flex-start;
+  padding: 20px;
+}
+
+.listCategory {
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+li {
+  text-indent: 20px;
+}
+
+#iconBar {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+
+}
+
+.icon {
+  color: #3E3E3E;
+  font-size: 50px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+
+  #contactInfo {
+    padding: 0px;
+    margin: 0px;
+    width: 50vw;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 24px;
+    width: 40vw;
+  }
+}
