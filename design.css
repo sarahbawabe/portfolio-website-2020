@@ -11,18 +11,17 @@
   align-self: center;
 }
 
-#poster {
+.designColumn {
+  display: flex;
   flex-flow: column wrap;
-  height: 145vh;
   align-content: center;
-  align-self: center;
+  align-self: flex-start;
 }
 
 .designSection {
   display: flex;
   width: 95vw;
   align-self: center;
-  /* justify-content: center; */
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 2px #E8E8E8 solid;
@@ -37,10 +36,14 @@
   border-top: 2px #E8E8E8 solid;
 }
 
+#columnSwitch-iPad {
+  display: none;
+}
+
 .designPic {
   width: 30vw;
   height: auto;
-  margin: 10px;
+  margin: 0.8vw;
   align-self: center;
 }
 
@@ -49,7 +52,7 @@
   flex-direction: column;
   background-color: #E8E8E8;
   width: 30vw;
-  margin: 10px;
+  margin: 0.8vw;
   padding-top: 30px;
   padding-bottom: 30px;
   justify-content: center;
@@ -71,4 +74,36 @@ h3 {
 
 #link:hover {
   border-bottom: 1px #3E3E3E solid;
+}
+
+@media only screen and (max-width: 1000px){
+  #columnSwitch-iPad {
+    display: block;
+  }
+  #columnSwitch-Full {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .designSection, .photoSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .designColumn {
+    align-self: center;
+  }
+
+  .designPic, .designInfo {
+    width: 90vw;
+    align-self: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  #swapOnPhone {
+    flex-direction: column-reverse;
+  }
 }
