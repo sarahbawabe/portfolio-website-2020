@@ -5,7 +5,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 70vw;
+  width: 90%;
+  max-width: 1000px;
   align-self: center;
 }
 
@@ -14,10 +15,16 @@
   justify-content: flex-start;
   float: left;
   text-align: left;
+  width: 100%;
+}
+
+#picAndLinks {
+  width: 50%;
 }
 
 #pic {
-  height: 50vw;
+  width: 100%;
+  height: auto;
   margin: 0px;
   padding: 0px;
 }
@@ -26,6 +33,16 @@ p {
   font-size: 18px;
   padding: 0px;
   text-align: left;
+}
+
+p a {
+  text-decoration: none;
+  color: #3E3E3E;
+  font-style: italic;
+}
+
+p a:hover {
+  color: blue;
 }
 
 h2 {
@@ -38,6 +55,7 @@ h2 {
   padding: 20px;
   padding-top: 0px;
   align-items: flex-start;
+  width: 50%;
 }
 
 .skills {
@@ -69,15 +87,9 @@ li {
   padding: 10px;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 850px) {
 
-  #contactInfo {
-    padding: 0px;
-    margin: 0px;
-    width: 50vw;
-  }
-
-  p {
+  p, li {
     font-size: 12px;
   }
 

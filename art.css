@@ -6,50 +6,39 @@
   align-self: center;
 }
 
-/* h1 {
-  color: #3E3E3E;
-  margin: 30px;
-  margin-bottom: 10px;
-  font-size: 32px;
-  text-align: center;
-  letter-spacing: 0.5em;
+#artBox {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: row;
+  width: 100vw;
+  align-self: center;
+  justify-content: center;
 }
 
-p {
-  font-size: 18px;
-  text-align: center;
-  margin: 0px;
-  margin-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-} */
-
-.artBox {
+.artColumn {
   display: flex;
+  width: 30vw;
+  height: fit-content;
   margin: 10px;
-  flex-flow: column wrap;
-  width: 100vw;
-  height: 300vh;
-  align-content: center;
-  align-self: center;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .artItem {
+  display: flex;
   cursor: default;
   position: relative;
   background-color: #3E3E3E;
-  text-align: center;
-  margin: 10px;
-  width: 30vw;
-  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
 }
 
 .artImage {
   opacity: 1;
   width: 100%;
-  height: 100%;
+  height: auto;
   transition: .5s ease;
-  backface-visibility: hidden;
 }
 
 .middle {
@@ -62,6 +51,7 @@ p {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
+
 
 .artItem:hover .artImage {
   opacity: 0.3;
@@ -83,20 +73,15 @@ p {
 }
 
 
-@media only screen and (max-width: 850px){
-
-  .artBox {
-    height: 140vh;
+@media only screen and (max-width: 650px){
+  #artBox {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-}
-
-@media only screen and (max-width: 450px) {
-
-  .artItem {
-    width: 80vw;
+  .artColumn {
+    width: 80%;
   }
-  .artBox {
-    height: 630vh;
-  }
+
 }
