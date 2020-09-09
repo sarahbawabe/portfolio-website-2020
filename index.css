@@ -32,6 +32,11 @@ h1 {
   letter-spacing: 0.5em;
 }
 
+h3 {
+  color: #3E3E3E;
+  text-transform: uppercase;
+}
+
 p {
   font-size: 18px;
   text-align: center;
@@ -88,7 +93,45 @@ nav {
   padding: 10px;
 }
 
-@media only screen and (max-width: 850px){
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.centered-column {
+  align-self: center;
+  max-width: 800px;
+  width: 85%;
+}
+
+.button-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  height: 45px;
+  width: fit-content;
+  text-align: center;
+  color: #3E3E3E;
+  border-radius: 5px;
+  border: 2px solid #3E3E3E;
+}
+
+.button-box:hover {
+  border: 2px dashed #3E3E3E;
+}
+
+@media only screen and (max-width: 960px) {
+
   .topBox {
     flex-direction: column;
   }
@@ -100,20 +143,18 @@ nav {
   }
 
   nav {
+    flex-flow: row wrap;
+    justify-content: center;
     margin-bottom: 10px;
   }
 
 }
 
 @media only screen and (max-width: 450px) {
+
   #name {
     width: 90vw;
-    height: auto;
     margin-bottom: 0px;
   }
-  nav {
-    flex-flow: row wrap;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
+
 }

@@ -1,0 +1,56 @@
+.third-width-img {
+  width: 30%;
+  height: auto;
+  align-self: flex-start;
+}
+
+p {
+  text-align: left !important;
+}
+
+hr {
+  width: 100%;
+  border: 1px #E8E8E8 solid;
+  margin: 30px 0px;
+}
+
+li {
+  max-width: 90%;
+  align-self: flex-end;
+}
+
+.full-width-img {
+  width: 70%;
+  height: auto;
+  align-self: center;
+}
+
+.half-width-img {
+  width: 50%;
+  height: auto;
+  align-self: flex-start;
+}
+
+@media only screen and (max-width: 850px) {
+  p, li {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #user-testing {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #user-testing li {
+    align-self: flex-start;
+    margin-left: 25px;
+  }
+
+  #user-testing .half-width-img {
+    align-self: center;
+    margin-bottom: 15px !important;
+  }
+}

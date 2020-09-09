@@ -1,0 +1,135 @@
+<!doctype html>
+
+<!-- UIUX PAGE  -->
+
+<html>
+  <head>
+    <title>Sarah Bawabe</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="uiux.css">
+    <link rel="icon" href="./favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Nanum Gothic: 100,400,700' rel='stylesheet'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+  </head>
+
+  <div class="topBox">
+    <div id="nameBox">
+      <a href="index.html"> <img src="name.png" id="name"> </a>
+    </div>
+    <div id="optionsBox">
+      <nav>
+        <a href="art.html" class="navbar">+ art</a>
+        <a href="design.html" class="navbar">+ design</a>
+        <a href="uiux.html" class="navbar" id="selected">+ ui/ux</a>
+        <a href="resume.html" class="navbar">+ resume/cv</a>
+        <a href="aboutMe.html" class="navbar">+ about me</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="flex-column centered-column">
+    <h1>UI/UX</h1>
+    <hr>
+    <img src="uiux/uxfactor-logo.png" class="full-width-img">
+    <h2>Led the creation and design of a new grading platform to be used within
+    Jeff Huang's course <em>CSCI1300: User Interfaces and User Experience</em>
+    at Brown University.</h2>
+
+    <a href="https://uxfactor.cs.brown.edu/" class="button-box" target="_blank">
+      read more here
+      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#2A2E3B" stroke-linecap="round" stroke-linejoin="round" transform="translate(4 6)"><polyline points="12.329 7.328 12.328 1.67 6.671 1.669" transform="scale(1 -1) rotate(45 20.36 0)"/><line x1="13.5" x2=".5" y1="4.5" y2="4.5"/></g></svg>
+    </a>
+
+    <br>
+    <h3>overview</h3>
+    <p>The UX Factor is an online grading platform that allows users to anonymously
+      view others' submissions and give their feedback. The goal of this is to allow
+      students to get as much feedback as possible, while still maintaining the
+      anonymity of each submission. In order to quantitatively analyze each students'
+      submission (which allows us to translate feedback into a grade), we ask pointed
+      questions and ask users to determine which submission, given a pair of two
+      submissions, better answers the task of the question. In this way, we can not
+      only give helpful feedback to students based on their peers' responses, but
+      also a quantitative grade that is, ideally, less biased than a grade that would
+      be given solely by one reviewer.</p>
+
+    <br>
+    <h3>planning + sketching</h3>
+    <p>Beginning with just a basic concept, I began the process of building this
+    grading platform by reading papers, doing research on pre-existing peer review
+    softwares, and gathering opinions and advice from peers. Following this, I
+    created a variety of sketches to help me visualize and brainstorm what the
+    multitude of information I had gathered could look like in this grading platform.</p>
+    <div class="flex-row" style="justify-content: space-evenly;">
+      <img class="third-width-img" src="uiux/wireframes1.jpg">
+      <img class="third-width-img" src="uiux/wireframes2.jpg">
+      <img class="third-width-img" src="uiux/wireframes3.jpg">
+    </div>
+
+    <br>
+    <h3>building the platform</h3>
+    <p>After experimenting with a variety of setups, we decided to create a login
+    page and a comparison page. Deciding that it would be simpler for users to
+    have one page per submission pair, this setup would help simplify and clarify
+    the different evaluation tasks that we were asking users to complete.</p>
+    <div class="flex-row" style="justify-content: space-evenly;">
+      <img class="half-width-img" src="uiux/login-page.png">
+      <img class="half-width-img" src="uiux/submissionA.png">
+    </div>
+    <div class="flex-row" style="justify-content: space-evenly;">
+      <img class="half-width-img" src="uiux/submissionB.png">
+      <img class="half-width-img" src="uiux/submit-exit.png">
+    </div>
+
+    <br>
+    <h3>user testing</h3>
+    <div class="flex-row" id="user-testing">
+      <img class="half-width-img" src="uiux/usertesting.jpg"
+        style="border: 2px solid #E8E8E8; border-radius: 5px; margin: 0px 10px;">
+
+      <div class="flex-column">
+        <p>It was decided to conduct two rounds of user testing over the summer, due
+        to time constraints on having this platform ready for the fall semester. A
+        sample of the first user testing document is shown here, where we asked users
+        to perform specific tasks, and fill out a google feedback form with their
+        notes, comments, and critiques. </p>
+        <p>Following user testing, we ended up making a variety of changes, including
+          but not limited to:</p>
+        <li>altering our layout to the side-by-side view seen above (rather than
+          a column view, which did not utilize whitespace as well)</li>
+        <li>swapping wording to clarify button functionality</li>
+        <li>adding preview images to help users remember which submission was which
+        after visiting the associated submission links</li>
+        <li>blurring these images slightly so that users would not be able to rely
+        solely on the preview image to answer questions</li>
+        <li>adding a tutorial button that would reopen the tutorial popup</li>
+        <li>adding a "are you sure?" popup when clicking the submit button</li>
+      </div>
+    </div>
+
+    <br>
+    <h3>current prototype + coming soon</h3>
+    <p>Information about the latest version of the prototype and how you can install it
+      can be found by following
+      the link below. We are currently working on adding functionality to weigh TA
+      feedback more, allow students to see which submissions scored better than theirs
+      in certain categories, and fully automating our current grading script (which
+      translates the information gathered from the UX Factor into grades).</p>
+    <br>
+    <a href="https://uxfactor.cs.brown.edu/" class="button-box" target="_blank">
+      read more here
+      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="#2A2E3B" stroke-linecap="round" stroke-linejoin="round" transform="translate(4 6)"><polyline points="12.329 7.328 12.328 1.67 6.671 1.669" transform="scale(1 -1) rotate(45 20.36 0)"/><line x1="13.5" x2=".5" y1="4.5" y2="4.5"/></g></svg>
+    </a>
+    <hr>
+
+  </div>
+
+  <div id="copyright">
+    <p> <i class="far fa-copyright"></i> 2020 All images and content are property
+      of Sarah Bawabe. </p>
+  </div>
+
+</html>

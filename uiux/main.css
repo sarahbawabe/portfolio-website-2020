@@ -1,0 +1,332 @@
+  body {
+    font-family: 'Overpass';
+    background-color: #68a1be;
+    background-image: url("gradient-background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-size: 14px;
+  }
+
+  hr {
+    margin: 50px 0px;
+    height: 10px;
+    border: 0;
+    background-color: rgb(54,89,120,0.5);
+  }
+
+  #logo {
+    width: 90%;
+    height: auto;
+    opacity: 0.8;
+    padding: 10px 0px;
+  }
+
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-center {
+    justify-content: center;
+  }
+
+  .content-section {
+    width: 80%;
+    align-self: center;
+    padding: 20px 0px;
+  }
+
+  #ux-factor {
+    justify-content: space-between;
+    margin-top: 25px;
+    padding: 2%;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #opaque-logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    background-color: rgb(256,256,256,0.2);
+    border-radius: 20px;
+    align-content: center;
+    margin: 20px 0px;
+  }
+
+  .gray-round-box {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 20px;
+    background-color: rgb(54,89,120,0.3);
+    padding: 10px 20px;
+  }
+
+  #nav-bar {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    padding: 10px 20px;
+    color: white;
+  }
+
+  #nav-items a {
+    padding-left: 25px;
+  }
+
+  a {
+    text-decoration: none;
+    text-decoration: underline;
+    color: rgb(0,0,0,0.6);
+  }
+
+  .styled-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    width: fit-content;
+    cursor: pointer;
+  }
+
+  .styled-link:hover {
+    color: #365978;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin: 0;
+    color: white;
+    opacity: 0.8;
+  }
+
+  h2 {
+    font-size: 36px;
+    margin: 0;
+    letter-spacing: 0.2em;
+    color: rgb(54,89,120,0.9);
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(0,0,0,0.6);
+  }
+
+  h4 {
+    font-size: 24px;
+    margin: 0;
+    color: white;
+    opacity: 0.8;
+  }
+
+  .half-width {
+    width: 80%;
+    max-width: 600px;
+  }
+
+  p {
+    font-size: 18px;
+    color: white;
+    opacity: 0.8;
+  }
+
+  .app-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .app-img-container {
+    align-items: flex-start;
+  }
+
+  #about {
+    justify-content: space-between;
+  }
+
+  #about-icons {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .l-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 150px;
+    border-left: 3px solid rgb(0,0,0,0.6);
+    border-bottom: 3px solid rgb(0,0,0,0.6);
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .app-icon {
+    margin-top: 25px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .link-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 0px 10px;
+    border: 2px solid rgb(54,89,120,0.6);
+    border-radius: 10px;
+    margin: 10px 0px;
+  }
+
+  .how-to-icon {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 50px 0px;
+  }
+
+  .how-to-text {
+    width: 70%;
+    border-left: 5px solid rgb(256,256,256,0.6);
+    min-height: 200;
+    padding-left: 20px;
+  }
+
+  .img-holder-circle {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: top;
+    vertical-align: middle;
+  }
+
+  #author-container {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .author-box {
+    margin: 20px;
+    width: 160px;
+    align-items: center;
+  }
+
+  .author-box h3 {
+    margin: 0;
+  }
+
+  #copyright-section {
+    align-self: flex-start;
+    padding: 20px;
+    max-width: 60%;
+  }
+
+  @media only screen and (max-width: 1000px) {
+
+    h1 {
+      font-size: 24px;
+    }
+
+    #about-icons {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+  }
+
+  @media only screen and (max-width: 800px) {
+    #app .app-img-container {
+      flex-direction: column;
+      justify-content:
+    }
+
+    .app-img {
+      width: 100%;
+    }
+
+    #about-icons .flex-column {
+      justify-content: center;
+      align-items: center;
+    }
+
+    #about {
+      flex-direction: column;
+    }
+
+    #about-text {
+      width: 100%;
+    }
+
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    .how-to-icon {
+      flex-direction: column;
+      margin: 25px 0px;
+    }
+
+    .how-to-text {
+      width: 95%;
+      padding-left: 5%;
+    }
+
+    #nav-items .styled-link {
+      padding: 0;
+      color: #CAE3D2;
+    }
+
+    #nav-items {
+      width: 100%;
+      justify-content: space-evenly;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      padding: 5px 0px;
+      background-color: rgb(0,0,0,0.5);
+    }
+
+    #opaque-logo-box {
+      width: 100%;
+    }
+
+    #nav-disappear {
+      display: none;
+    }
+
+    h2 {
+      font-size: 28px;
+    }
+
+    h4 {
+      font-size: 20px;
+    }
+
+    hr {
+      margin: 20px 0px;
+    }
+
+    #about-icons, #app-blurbs {
+      flex-direction: column;
+    }
+
+    #app-blurbs .flex-column {
+      width: 100% !important;
+    }
+  }
